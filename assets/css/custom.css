@@ -147,7 +147,6 @@ img {
 }
 
 .badge.social {
-    background: #ccc;
     font-size: 24px;
     height: 40px;
     width: 40px;
@@ -161,8 +160,14 @@ img {
     color: white;
 }
 
+.badge.social.widget {
+    background: transparent;
+    color: #ccc;
+}
+
 .badge.social:hover {
     color: white;
+    background: #2a2a2a;
 }
 
 .badge.social.twitter:hover {
@@ -175,6 +180,10 @@ img {
 
 .badge.social.instagram:hover {
     background: #8a3ab9;
+}
+
+.badge.social.youtube:hover {
+    background: #a42102;
 }
 
 blockquote {
@@ -371,6 +380,29 @@ h3.stabilo {
 
 #signup .btn {
     font-size: 24px;
+}
+
+.feature-image {
+    display: table;
+    width: 100%;
+    min-height: 40vh;
+    background-size: cover;
+}
+
+.feature-image-about {
+    background: linear-gradient( rgba(20, 20, 20, .6), rgba(20, 20, 20, .6)), url('../img/spices2.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.feature-image h1 {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+}
+
+#about-about {
+  color: #ccc;
 }
 
 footer {
