@@ -1,0 +1,436 @@
+/*
+darkest grey #171813
+grey #3e4249
+grey #222222
+grey #333333
+grey #222222
+yellow #edb021
+orange #da6801
+red #a42102
+*/
+
+
+/* GENERAL */
+
+body {
+    margin-top: 0px;
+    font-family: 'europa', 'Raleway', Helvetica, sans-serif;
+    font-size: 16px;
+    background: #333333;
+}
+
+
+/* GLOBAL */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h1,
+h2 {
+    margin: 0 0 40px;
+}
+
+h3 {
+    margin: 20px 0;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+p {
+    margin: 0 0 15px;
+}
+
+p.lead {
+    font-weight: normal;
+}
+
+a:link,
+a:visited {
+    color: #edb021;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #edb021;
+    font-weight: bold;
+}
+
+button,
+input,
+.btn,
+a.btn {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeSpeed;
+    color: #171813;
+}
+
+.btn {
+    font-weight: bold;
+}
+
+button.btn:focus {
+    outline: none !important;
+}
+
+.btn-success {
+    background: #edb021;
+    border: none;
+}
+
+.btn-success:hover {
+    background: #a42102;
+}
+
+img {
+    max-width: 100%;
+}
+
+.modal-content {
+    background: url('../img/tile.jpg') top left repeat;
+}
+
+.navbar-brand img {
+    height: 30px;
+}
+
+.navbar-custom {
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+.thumbnail {
+    background: #333;
+    border: none;
+    height: 430px;
+}
+
+.badge.social {
+    background: #ccc;
+    font-size: 24px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 42px;
+    margin: 0 5px 20px 0;
+    padding: 0;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    color: white;
+}
+
+.badge.social:hover {
+    color: white;
+}
+
+.badge.social.twitter:hover {
+    background: #55acee;
+}
+
+.badge.social.facebook:hover {
+    background: #3b5998;
+}
+
+.badge.social.instagram:hover {
+    background: #8a3ab9;
+}
+
+blockquote {
+    padding: 0;
+    border: none;
+    font-style: italic;
+    text-align: left;
+}
+
+blockquote cite {
+    display: block;
+    color: #777;
+    margin: 15px 0 0 0;
+}
+
+blockquote:before {
+    display: none;
+}
+
+
+/* HERO */
+
+#hero {
+    background: linear-gradient( rgba(20, 20, 20, .7), rgba(20, 20, 20, .7)), url('../img/street.jpg') center center no-repeat fixed;
+    min-height: 100vh;
+    /*height: 0;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    display: table;
+    width: 100%;
+    padding: 0 0;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+}
+
+#hero article {
+    width: 100%;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#hero .hero-text {
+    margin-top: 30px;
+}
+
+
+/* LAYOUT */
+
+.row+.row {
+    margin-top: 20px;
+}
+
+section {
+    padding: 50px 0;
+    color: white;
+}
+
+.section-header {
+    text-align: center;
+}
+
+section h2 {
+    margin: 20px 0 40px;
+}
+
+section h3 {
+    margin: 20px 0 10px;
+}
+
+#about {
+    background: #222222;
+    padding: 20px 0;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#about p {
+    margin: 7px 0 0 0;
+}
+
+#about a:hover {
+    font-weight: bold;
+}
+
+#latest-updates .thumbnail-content {
+    color: #dcdcdc;
+    height: 160px;
+}
+
+#latest-updates .thumbnail-img {
+    height: 200px;
+    overflow: hidden;
+}
+
+#upcoming-events {
+    background: linear-gradient( rgba(20, 20, 20, .7), rgba(20, 20, 20, .7)), url('../img/skyline.jpg') 100% 100% repeat fixed;
+    text-align: center;
+}
+
+#upcoming-events .num {
+    display: table;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    line-height: 24px;
+    height: 140px;
+    width: 140px;
+    text-align: center;
+    background: #a42102;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    vertical-align: middle;
+    margin: 10px;
+}
+
+#upcoming-events .num .num-content {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#upcoming-events .num span {
+    display: block;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+#upcoming-events p {
+    margin: 0 0 0;
+}
+
+#akar {
+    padding: 0;
+}
+
+#akar h2 {
+    margin: 50px 0 10px;
+}
+
+.testimonial {
+    margin-bottom: 60px;
+}
+
+.testimonial img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+
+#newcomers {
+    text-align: center;
+    background: linear-gradient( rgba(20, 20, 20, .7), rgba(20, 20, 20, .7)), url('../img/queensboro.jpg') center center repeat fixed;
+    background-size: cover;
+    color: white;
+    padding: 140px 0;
+}
+
+#signup h2 strong {
+    border-bottom: solid 2px #dd5638;
+}
+
+#signup .btn {
+    font-size: 24px;
+}
+
+footer {
+    background: #222222;
+    color: white;
+    padding: 20px 0 0;
+    font-size: 12px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a:link,
+footer a:visited {
+    color: white;
+}
+
+footer a:hover {
+    color: #edb021;
+}
+
+footer li.signup-link a {
+    color: #edb021
+}
+
+footer .badge.social {
+    background: white;
+    font-size: 12px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    line-height: 20px;
+    /*margin: 0 5px 20px 0;*/
+    padding: 0;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    color: #3e4249
+}
+
+
+/* CUSTOM ICON SPRITES */
+
+i.ci {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background: url('../img/icon-sprite.png') no-repeat;
+}
+
+.ci.ci-computer {
+    background-position: 0 0;
+}
+
+.ci.ci-watch {
+    background-position: -40px 0;
+}
+
+.ci.ci-calendar {
+    background-position: -80px 0;
+}
+
+.ci.ci-community {
+    background-position: -120px 0;
+}
+
+.ci.ci-instructor {
+    background-position: -160px 0;
+}
+
+.ci.ci-device {
+    background-position: -200px 0;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and ( max-width:991px) {
+    #instructor .container {
+        background: rgba(255, 255, 255, 0.8);
+    }
+}
+
+@media screen and (max-width:768px) {
+    .logo {
+        width: 50%;
+    }
+    #optin p {
+        margin: 0 0 10px;
+    }
+    #featurette iframe {
+        height: 240px;
+    }
+    .navbar-custom {
+        background: transparent;
+        border-bottom: 1px solid transparent;
+    }
+}
+
+@media screen and (max-width:568px) {
+    #instructor .num {
+        height: 100px;
+        width: 100px;
+        font-size: 22px;
+    }
+    #instructor .num span {
+        font-size: 16px;
+    }
+}
