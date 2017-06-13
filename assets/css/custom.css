@@ -15,7 +15,7 @@ red #a42102
 body {
     margin-top: 0px;
     font-family: 'europa', 'Raleway', 'Lora', Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     background: #333333;
 }
 
@@ -129,6 +129,7 @@ img {
 
 .navbar-brand img {
     height: 30px;
+    margin-right: 20px;
 }
 
 .navbar-custom {
@@ -207,6 +208,18 @@ blockquote:before {
     margin-top: 20px;
 }
 
+
+.khaki {
+  background: #75655a;
+}
+
+.libre {
+  font-family: 'Libre Baskerville';
+}
+
+.row {
+  padding: 10px 20px;
+}
 
 /* HERO */
 
@@ -403,6 +416,21 @@ h3.stabilo {
 
 #about-about {
   color: #ccc;
+}
+
+#performances {
+  background: #f2efe6;
+  color: #222;
+}
+
+#cuisines {
+  background: #e0dbcc;
+  color: #222;
+}
+
+h3.upp {
+  margin-top: 20px;
+  text-decoration: overline;
 }
 
 footer {
