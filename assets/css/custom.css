@@ -313,6 +313,10 @@ h3.stabilo {
   background-size: cover;
 }
 
+#about {
+  padding-top: 20px;
+}
+
 
 #location {
     background: linear-gradient( rgba(20, 20, 20, .7), rgba(20, 20, 20, .7)), url('../img/spices1.jpg') center center no-repeat fixed;
