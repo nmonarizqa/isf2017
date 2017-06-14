@@ -313,11 +313,16 @@ section h3 {
 }
 
 h3.stabilo {
-    background: #c64825;
+  /*  background: #c64825;*/
+    background: #c0730a;
     display: inline;
     padding: 5px 10px;
     font-weight: normal;
     font-style: italic;
+}
+
+h3.stabilo:hover {
+  background: #222;
 }
 
 #cultural {
