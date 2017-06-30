@@ -13,8 +13,7 @@ red #a42102
 /* GENERAL */
 
 body {
-    margin-top: 0px;
-    font-family: 'europa', 'Raleway', 'Lora', Helvetica, sans-serif;
+    font-family: 'Raleway', 'Lora', Helvetica, sans-serif;
     font-size: 18px;
     background: #333333;
 }
@@ -101,22 +100,36 @@ button.btn:focus {
 
 .btn-read-more {
     background: transparent;
-    border: 2px solid white;
-    color: white;
     border-radius: 0;
     margin: 20px;
 }
 
+.btn-white {
+  border: 2px solid white;
+  color: white;
+}
+
+.btn-black {
+  border: 2px solid #333;
+  color: white;
+}
+
+a.btn-white {
+  color: white;
+}
+
 a.btn-read-more {
-    color: white;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-size: 0.8em;
 }
 
 .btn-read-more:hover {
-    background: white;
-    color: #c64825;
+    /*c64825*/
+    background: #cf6502;
+    border: 2px solid #cf6502;
+    color: white;
+    font-weight: bolder;
 }
 
 img {
@@ -132,6 +145,10 @@ img {
     margin-right: 20px;
 }
 
+.navbar-inverse .navbar-toggle {
+  border-color: transparent;
+}
+
 .navbar-custom {
     background: transparent;
     position: absolute;
@@ -140,6 +157,7 @@ img {
     width: 100%;
     z-index: 3;
 }
+
 
 .thumbnail {
     background: #333;
@@ -208,6 +226,13 @@ blockquote:before {
     margin-top: 20px;
 }
 
+.mbot20 {
+  margin-bottom: 20px;
+}
+
+.mbot80 {
+  margin-bottom: 80px;
+}
 
 .khaki {
   background: #75655a;
@@ -221,10 +246,14 @@ blockquote:before {
   padding: 10px 20px;
 }
 
+.mtop0 {
+  margin-top: 0;
+}
+
 /* HERO */
 
 #hero {
-    background: linear-gradient( rgba(20, 20, 20, .7), rgba(20, 20, 20, .7)), url('../img/spices2.jpg') center center no-repeat fixed;
+    background: linear-gradient( rgba(20, 20, 20, .5), rgba(20, 20, 20, .5)), url('../img/spices2.jpg') center center no-repeat fixed;
     min-height: 100vh;
     /*height: 0;*/
     -webkit-background-size: cover;
@@ -255,6 +284,7 @@ blockquote:before {
   text-transform: uppercase;
   letter-spacing: 2pt;
   font-size: 20px;
+  margin-bottom: 60px;
 }
 
 #hero h1.spice{
@@ -270,6 +300,18 @@ blockquote:before {
 
 .countdown span {
   color: #aaaaaa;
+}
+
+.countdown h1 {
+  margin-bottom: 10px;
+}
+
+.sep, .timer-slot {
+  display: inline-block;
+}
+
+.timer-slot {
+  width: 65px;
 }
 
 /* LAYOUT */
@@ -288,7 +330,7 @@ section {
 }
 
 section h2 {
-    margin: 60px 0 60px;
+    margin: 60px 0 20px;
     letter-spacing: 0.2em;
     font-weight: normal;
 }
@@ -298,30 +340,40 @@ section h3 {
 }
 
 #experiences {
-    background: #75655a;
+    /*background: #75655a;
+    background: rgba(202,145,68,.4);
+    background-color: rgba(193, 115, 10, .5);
+    background: #e0dbcc;
+    background: #e6e2df;*/
+    background: url('../img/canvas2.jpg') center center repeat;
     padding: 20px 0;
-    color: white;
+    color: #333;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 }
 
 .center-cropped {
-    height: 350px;
-    overflow: hidden;
-    padding: 300px 10px 10px 10px;
+  min-width:100%;
+  max-height:200px;
+  display:block;
+  /* div height to be the same as width*/
+  padding-top:100%;
+
+  overflow: hidden;
 }
 
 h3.stabilo {
-  /*  background: #c64825;*/
+  /*  background: #c64825;
     background: #c0730a;
+    background: #901405; */
+    background: #cf6502;
     display: inline;
-    padding: 5px 10px;
-    font-weight: normal;
-    font-style: italic;
-}
-
-h3.stabilo:hover {
-  background: #222;
+    position: absolute;
+    bottom: -10px;
+    padding: 10px 10px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
 }
 
 #cultural {
@@ -363,6 +415,13 @@ h3.stabilo:hover {
 
 #location p {
     margin: 0 0 0;
+}
+
+#map-canvas {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 15px;
+  border: 2px solid #fff;
 }
 
 #akar {
@@ -422,9 +481,45 @@ h3.stabilo:hover {
   color: #ccc;
 }
 
+p.punchline {
+  background: #aaa;
+  color: #222;
+  float: left;
+  margin: 10px;
+  margin-left: -5px;
+  margin-right: 20px;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+
+.cs {
+  font-size: 2em;
+  text-align: center;
+  color: #aaa;
+  font-style: italic;
+}
+
 #performances {
   background: #f2efe6;
   color: #222;
+
+}
+
+.image-holder {
+  height: 190px;
+  width: 190px;
+  border-radius: 200px;
+  margin:-150px auto 0 auto;
+}
+
+#perf-img {
+  background: url('../img/perf.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+#cuis-img {
+  background: url('../img/foodstand.jpg') center center no-repeat;
+  background-size: cover;
 }
 
 #cuisines {
@@ -455,6 +550,7 @@ footer a:visited {
 
 footer a:hover {
     color: #edb021;
+    font-weight: bold;
 }
 
 footer li.signup-link a {
@@ -462,7 +558,7 @@ footer li.signup-link a {
 }
 
 footer .badge.social {
-    background: white;
+    background: transparent;
     font-size: 12px;
     height: 20px;
     width: 20px;
@@ -473,7 +569,7 @@ footer .badge.social {
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
-    color: #3e4249
+    color: #white;
 }
 
 
@@ -532,6 +628,9 @@ i.ci {
     .navbar-custom {
         background: transparent;
         border-bottom: 1px solid transparent;
+    }
+    .collapse {
+      background: #222;
     }
 }
 
