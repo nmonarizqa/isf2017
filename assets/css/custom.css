@@ -63,12 +63,12 @@ p.lead {
 
 a:link,
 a:visited {
-    color: #edb021;
+    color: white;
 }
 
 a:hover {
     text-decoration: none;
-    color: #edb021;
+    color: white;
     font-weight: bold;
 }
 
