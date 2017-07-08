@@ -136,6 +136,10 @@ img {
     max-width: 100%;
 }
 
+.navbar-wrapper {
+  z-index: 1000;
+}
+
 .modal-content {
     background: url('../img/tile.jpg') top left repeat;
 }
@@ -155,7 +159,7 @@ img {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 3;
+    z-index: 1000;
 }
 
 
@@ -269,6 +273,78 @@ blockquote:before {
     text-rendering: optimizelegibility;
 }
 
+.cb-slideshow,
+.cb-slideshow:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    background-size: cover;
+    background: center center no-repeat absolute;
+    min-height: 100vh;
+}
+.cb-slideshow:after {
+    content: '';
+    background: linear-gradient( rgba(20, 20, 20, .6), rgba(20, 20, 20, .6)) center center no-repeat fixed;
+}
+.cb-slideshow li {
+    color: transparent;
+    width: 100%;
+}
+.cb-slideshow li span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: none;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 36s linear infinite 0s;
+    min-height: 100vh;
+}
+
+.cb-slideshow li:nth-child(1) span {
+    background-image: url('../img/spices2.jpg');
+}
+.cb-slideshow li:nth-child(2) span {
+    background-image: url('../img/sate.jpg');
+    animation-delay: 6s;
+}
+.cb-slideshow li:nth-child(3) span {
+    background-image: url('../img/perf1.jpg');
+    animation-delay: 12s;
+}
+.cb-slideshow li:nth-child(4) span {
+    background-image: url('../img/stands2.jpg');
+    animation-delay: 18s;
+}
+.cb-slideshow li:nth-child(5) span {
+    background-image: url('../img/krupuk.jpg');
+    animation-delay: 24s;
+}
+.cb-slideshow li:nth-child(6) span {
+    background-image: url('../img/stands3.jpg');
+    animation-delay: 30s;
+}
+
+@keyframes imageAnimation {
+    0% { opacity: 0; animation-timing-function: ease-in; }
+    8% { opacity: 1; animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+.no-cssanimations .cb-slideshow li span{
+	opacity: 1;
+}
+
 #hero article {
     width: 100%;
     text-align: center;
@@ -323,6 +399,7 @@ blockquote:before {
 section {
     padding: 50px 0;
     color: white;
+    z-index: 100;
 }
 
 .section-header {
@@ -377,12 +454,12 @@ h3.stabilo {
 }
 
 #cultural {
-  background: url('../img/pic1.jpg') center center no-repeat;
+  background: url('../img/perf2.jpg') center center no-repeat;
   background-size: cover;
 }
 
 #cuisine {
-  background: url('../img/pic2.jpg') center center no-repeat;
+  background: url('../img/stands.jpg') center center no-repeat;
   background-size: cover;
 }
 
@@ -393,6 +470,7 @@ h3.stabilo {
 
 #about {
   padding-top: 20px;
+  z-index: 500;
 }
 
 
