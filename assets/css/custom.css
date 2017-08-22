@@ -579,6 +579,34 @@ h3.stabilo {
   color: #ccc;
 }
 
+.vendor {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  margin: auto;
+}
+.vendor img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+  border-radius: 200px;
+
+}
+.vendor img.portrait {
+  width: 100%;
+  height: auto;
+}
+
+#cuisines p {
+  text-align: center;
+  margin-top: 10px;
+}
 
 p.punchline {
   background: #aaa;
