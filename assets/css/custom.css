@@ -608,6 +608,11 @@ h3.stabilo {
   margin-top: 10px;
 }
 
+.hilite {
+  color:#cf6502 !important;
+  font-weight: bold !important;
+}
+
 p.punchline {
   background: #aaa;
   color: #222;
@@ -624,6 +629,14 @@ p.punchline {
   text-align: center;
   color: #aaa;
   font-style: italic;
+}
+
+#indomie {
+  background-color: #444;
+}
+
+.container-narrow {
+  margin: 20px;
 }
 
 #performances, #vendors {
