@@ -27,7 +27,7 @@ $(function() {
 });
 
 var dateNow = new Date();
-var countdown_date = new Date(2017, 9 - 1, 26, 13, 00).getTime();
+var countdown_date = new Date(2017, 7, 26, 12, 0).getTime();
 var days, hours, minutes, seconds;
 // update every 1 second
 var timer = setInterval(function () {CountdownTimer()}, 1000);

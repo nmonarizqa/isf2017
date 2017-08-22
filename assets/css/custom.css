@@ -273,6 +273,20 @@ blockquote:before {
     text-rendering: optimizelegibility;
 }
 
+#message {
+  margin-top: 40px;
+  z-index: 10000;
+  margin-bottom: -40px;
+}
+
+#inner-message:hover {
+  font-weight: bold;
+}
+
+#inner-message > a {
+  color: #a94442;
+}
+
 .cb-slideshow,
 .cb-slideshow:after {
     position: absolute;
@@ -539,13 +553,19 @@ h3.stabilo {
 .feature-image {
     display: table;
     width: 100%;
-    min-height: 40vh;
+    background: linear-gradient( rgba(20, 20, 20, .6), rgba(20, 20, 20, .6)), url('../img/spices2.jpg') center center no-repeat;
     background-size: cover;
 }
 
 .feature-image-about {
-    background: linear-gradient( rgba(20, 20, 20, .6), rgba(20, 20, 20, .6)), url('../img/spices2.jpg') center center no-repeat;
     background-size: cover;
+    min-height: 40vh;
+}
+
+.info {
+  background: linear-gradient( rgba(20, 20, 20, .6), rgba(20, 20, 20, .6)), url('../img/spices1.jpg') center center no-repeat;
+  background-size: cover;
+  height: 20vh;
 }
 
 .feature-image h1 {
@@ -558,6 +578,7 @@ h3.stabilo {
 #about-about {
   color: #ccc;
 }
+
 
 p.punchline {
   background: #aaa;
@@ -577,7 +598,7 @@ p.punchline {
   font-style: italic;
 }
 
-#performances {
+#performances, #vendors {
   background: #f2efe6;
   color: #222;
 
